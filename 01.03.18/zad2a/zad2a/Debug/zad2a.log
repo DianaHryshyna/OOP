@@ -1,0 +1,3 @@
+﻿  main.cpp
+c:\users\user\desktop\lessons\oop\01.03.18\zad2a\zad2a\main.cpp(30): warning C4305: аргумент: усечение из "double" в "float"
+  zad2a.vcxproj -> C:\Users\User\Desktop\Lessons\OOP\01.03.18\zad2a\Debug\zad2a.exe
