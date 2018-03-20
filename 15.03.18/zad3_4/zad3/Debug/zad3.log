@@ -1,0 +1,6 @@
+﻿  main.cpp
+  Subject.cpp
+  Student.cpp
+  Создание кода...
+c:\users\user\desktop\lessons\oop\15.03.18\zad3\zad3\subject.cpp(29): warning C4172: возвращение адреса локальной или временной переменной : s
+  zad3.vcxproj -> C:\Users\User\Desktop\Lessons\OOP\15.03.18\zad3\Debug\zad3.exe
