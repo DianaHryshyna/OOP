@@ -1,0 +1,4 @@
+﻿  Villager.cpp
+c:\users\user\desktop\lessons\oop\22.03.18\zad1\zad1\villager.h(19): warning C4566: символ, представленный универсальным именем символа "\u0142", невозможно представить в текущей кодовой странице (1251)
+c:\users\user\desktop\lessons\oop\22.03.18\zad1\zad1\villager.h(19): warning C4566: символ, представленный универсальным именем символа "\u00F3", невозможно представить в текущей кодовой странице (1251)
+  zad1.vcxproj -> C:\Users\User\Desktop\Lessons\OOP\22.03.18\zad1\Debug\zad1.exe
