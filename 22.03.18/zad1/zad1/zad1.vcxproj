@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{DF5129FF-7578-4292-B3C0-D24354314745}</ProjectGuid>
+    <ProjectGuid>{867476E6-8E61-4049-B586-B8AD994489B6}</ProjectGuid>
     <RootNamespace>zad1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -115,7 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Villager.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -15,7 +15,7 @@ public:
 	string getName();
 	~Villager();
 private:
-	string* name;
+	string * name;
 	string m_name[3] = { "Adrian", "Paweł", "Józef" };
 	string f_name[3] = { "Krystyna", "Ola", "Ania" };
 	unsigned int age;

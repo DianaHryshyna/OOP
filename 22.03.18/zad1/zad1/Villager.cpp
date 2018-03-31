@@ -1,4 +1,4 @@
-﻿#include "Villager.h"
+#include "Villager.h"
 #include <iostream>
 
 
@@ -25,7 +25,7 @@ Villager::Villager() {
 	else {
 		*name = f_name[rand() % 3];
 	}
-	cout << "Osoba o imieniu "<< *name << ", ktora ma " << age << " lat, dozyje do " << m_age << endl;
+	cout << "Osoba o imieniu " << *name << ", ktora ma " << age << " lat, dozyje do " << m_age << endl;
 	if (sex == 1) {
 		cout << "mezczyzna" << endl;
 	}
@@ -39,7 +39,7 @@ Villager::Villager(Villager& villager) {
 	*this->name = villager.getName();
 }
 
-void Villager::advance(){
+void Villager::advance() {
 	age++;
 	if (age == m_age) {
 		delete this;
@@ -50,7 +50,7 @@ string Villager::getName() {
 	return *name;
 }
 
-Villager::~Villager(){
+Villager::~Villager() {
 	cout << "Umiera " << *name << " " << age << endl;
 	delete this->name;
 }
