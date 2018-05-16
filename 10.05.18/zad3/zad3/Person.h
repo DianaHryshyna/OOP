@@ -11,6 +11,7 @@ public:
 	bool operator < (Person child);
 	void operator <<= (Person* child);
 	Person* operator [](int index);
+	int getNumberChildren();
 	void sortChildren();
 	void output();
 	void output1(int index);
@@ -20,4 +21,3 @@ private:
 	int age;
 	std::vector<Person*> children;
 };
-

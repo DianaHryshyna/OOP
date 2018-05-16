@@ -7,7 +7,7 @@ Person::Person(std::string name, int age) : name(name), age(age)
 }
 
 bool Person::operator < (Person child) {
-	if(this->age <= child.age || this->age >= child.age) {
+	if (this->age <= child.age || this->age >= child.age) {
 		return this->age < child.age;
 	}
 	else {
@@ -28,6 +28,11 @@ Person* Person::operator [](int index) {
 	else {
 		return children[index];
 	}
+}
+
+int Person::getNumberChildren()
+{
+	return children.size();
 }
 
 void Person::output() {
