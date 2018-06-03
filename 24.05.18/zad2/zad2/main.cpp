@@ -28,16 +28,14 @@ public:
  };
 
 template<typename T>
-List<T>::List()
-{
-	size = 0;
-	head = nullptr;
+List<T>::List() 
+	: size(0)
+	, head(nullptr) {
 }
 
 
 template<typename T>
-List<T>::~List()
-{
+List<T>::~List() {
 }
 
 template<typename T>

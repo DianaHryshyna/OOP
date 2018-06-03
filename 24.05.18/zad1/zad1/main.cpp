@@ -8,34 +8,43 @@ public:
 	Array(int size);
 	~Array();
 	int size();
-	T& operator[](int index);
+	T& operator[] (int index);
+
 	template <typename T>
 	class Iterator {
 	public:
-		Iterator(T* ptr1 = 0) : ptr(ptr1) {}
-		T& operator*() {
+		Iterator(T* ptr1 = nullptr) 
+			: ptr(ptr1) {
+		}
+		T& operator* () {
 			return *ptr;
 		}
-		T* operator->() {
+		T* operator-> () {
 			return ptr;
 		}
-		T* operator++() {
+		T* operator++ () {
 			return ++ptr;
 		}
-		T* operator--() {
+		T* operator++ (int r) {
+			return ++ptr;
+		}
+		T* operator-- () {
 			return --ptr;
 		}
-		bool operator==(const Iterator& other) const {
-			return ptr == other.ptr;
+		bool operator== (const Iterator& other) const {
+			return (ptr == other.ptr);
 		}
-		bool operator!=(const Iterator& other) const {
+		bool operator!= (const Iterator& other) const {
 			return !(*this == other);
 		}
 	private:
-		T * ptr;
+		T* ptr;
 	};
+
 	T* begin();
 	T* end();
+
+	
 private:
 	unsigned int m_size;
 	T *arr;
@@ -63,15 +72,13 @@ T& Array<T>::operator[](int index) {
 }
 
 template<typename T>
-T* Array<T>::begin()
-{
+T* Array<T>::begin() {
 	return arr;
 }
 
 template<typename T>
-T* Array<T>::end()
-{
-	return arr+size;
+T* Array<T>::end() {
+	return arr + size;
 }
 
 int main() {
@@ -81,8 +88,10 @@ int main() {
 		tab[i] = i + 2;
 	}
 
-	Array<int>::Iterator it(tab.begin());
-	//cout << *(it++);
+	Array<int>::Iterator<int> it = tab.begin();
+	cout << *(it++);
+
+	cout << '\n';
 	system("pause");
 	return 0;
 }
