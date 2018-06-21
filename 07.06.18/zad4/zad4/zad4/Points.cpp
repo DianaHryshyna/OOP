@@ -15,13 +15,13 @@ Point Points::operator[](int index)
 		if (index >= size) {
 			throw std::out_of_range("Out of range error \n");
 		}
-		return arr[index];
+		else {
+			return arr[index];
+		}
 	}
 	catch (std::out_of_range outofrange){
 		std::cout << outofrange.what();
-	}
-	
-	
+	}	
 }
 
 Points::~Points()

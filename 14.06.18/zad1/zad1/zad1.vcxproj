@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{4A253A0B-9391-4638-8D68-7E1C690DD6C1}</ProjectGuid>
-    <RootNamespace>zad3</RootNamespace>
+    <ProjectGuid>{D6B4F42C-CFBD-45A1-BFFE-0B37889263CC}</ProjectGuid>
+    <RootNamespace>zad1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -116,14 +116,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Point.cpp" />
-    <ClCompile Include="Points.cpp" />
-    <ClCompile Include="PointsOperations.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Point.h" />
-    <ClInclude Include="Points.h" />
-    <ClInclude Include="PointsOperations.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,14 +1,9 @@
 #pragma once
 #include <iostream>
-
+#include "PointsOperations.h"
 using namespace std;
 
-struct Point {
-	int x;
-	int y;
-};
-
-class PointsOperations;
+//class PointsOperations;
 
 class Points
 {
@@ -17,8 +12,8 @@ public:
 	Points(int size);
 	~Points();
 private:
-	friend PointsOperations;
-	//friend Point* PointsOperations::closestToTheCenter(Points & points);
+	//friend PointsOperations;
+	friend Point * PointsOperations::closestToTheCenter(Points & points);
 	Point * arr;
 	int size;
 };

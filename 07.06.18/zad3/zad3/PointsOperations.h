@@ -1,5 +1,7 @@
 #pragma once
-#include "Points.h"
+#include "Point.h"
+class Points;
+
 class PointsOperations
 {
 public:

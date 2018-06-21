@@ -1,5 +1,5 @@
 #include "PointsOperations.h"
-
+#include "Points.h"
 
 
 PointsOperations::PointsOperations()
